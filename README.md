@@ -200,9 +200,7 @@ data-NewsCrawlingAndClustering/
 ├── outputs/
 │   ├── clustered_news.json
 │   └── clustered_news.csv
-├── screenshots/
-├── README.md
-└── requirements.txt
+└── README.md
 ```
 
 ### Installation
