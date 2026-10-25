@@ -102,7 +102,7 @@ The clustering notebook processed all 56 articles successfully.
 | Initial articles | 56 |
 | Articles after cleaning | 56 |
 | Articles after preprocessing | 56 |
-| Vocabulary size | 668 |
+| Vocabulary size | 670 |
 | TF-IDF documents | 56 |
 
 ### 3.3 K-Means Model Comparison
@@ -113,9 +113,9 @@ Five clustering configurations were tested.
 |---:|---:|---|
 | 2 | 0.2119 | 55, 1 |
 | 3 | 0.1049 | 53, 2, 1 |
-| 4 | -0.1660 | 53, 1, 1, 1 |
-| 5 | -0.1361 | 50, 2, 1, 1, 2 |
-| 6 | -0.0460 | 51, 1, 1, 1, 1, 1 |
+| 4 | -0.1660 | 50, 2, 1, 1, 2 |
+| 5 | -0.1361 | 50, 2, 1, 1, 1, 1 |
+| 6 | -0.0460 | 53, 1, 1, 1 |
 
 The configuration with **K = 2** achieved the highest Silhouette Score of **0.2119** among the tested configurations. However, the resulting clusters were highly imbalanced: 55 articles were assigned to Cluster 0, while only one article was assigned to Cluster 1.
 
@@ -144,9 +144,9 @@ The final clustering results were stored in the `big_data` database and `uts` co
 
 | Metric | Result |
 |---|---:|
-| Documents matched | 56 |
-| Documents updated | 54 |
-| New documents inserted during clustering | 0 |
+| Documents matched | 55 |
+| Documents updated | 55 |
+| New documents inserted during clustering | 1 |
 | Total documents in collection | 56 |
 
 The collection retained 56 documents, and the clustering field was updated for the matched records.
@@ -160,10 +160,22 @@ Suggested screenshots:
 
 <img width="1042" height="428" alt="image" src="https://github.com/user-attachments/assets/a8338982-5f0c-47cd-9a8b-9f841c3c4208" />
 
-- `02-preprocessing-results.png` — cleaned data and TF-IDF output.
-- `03-model-comparison.png` — Silhouette Score comparison for different K values.
-- `04-cluster-distribution.png` — article counts per cluster.
-- `05-mongodb-results.png` — MongoDB storage verification.
+- cleaned data and TF-IDF output.
+
+<img width="1284" height="184" alt="image" src="https://github.com/user-attachments/assets/6473b832-a3a6-440b-aa94-128ed1e84a51" />
+
+- Silhouette Score comparison for different K values.
+
+<img width="519" height="520" alt="image" src="https://github.com/user-attachments/assets/f01b9123-5ca3-4a15-b549-3c45f5cb54df" />
+
+- article counts per cluster.
+
+<img width="790" height="490" alt="image" src="https://github.com/user-attachments/assets/4018c319-0249-460a-92ef-0de9bcc84b8f" />
+
+- MongoDB storage verification.
+
+<img width="302" height="92" alt="image" src="https://github.com/user-attachments/assets/ac6abf94-ced7-4579-80f4-d453abbb3bc3" />
+
 
 ## 04. Installation & Usage
 
