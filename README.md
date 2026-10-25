@@ -147,9 +147,9 @@ The final clustering results were stored in the `big_data` database and `uts` co
 | Documents matched | 55 |
 | Documents updated | 55 |
 | New documents inserted during clustering | 1 |
-| Total documents in collection | 56 |
+| Total documents in collection | 57 |
 
-The collection retained 56 documents, and the clustering field was updated for the matched records.
+The collection retained 57 documents, and the clustering field was updated for the matched records.
 
 ### 3.6 Screenshots
 
